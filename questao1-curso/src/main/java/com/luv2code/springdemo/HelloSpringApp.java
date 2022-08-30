@@ -15,6 +15,7 @@ public class HelloSpringApp {
         //Chamar os métodos do bean específico
         System.out.println(theCoach.getDailyWorkout());
         System.out.println(theCoach1.getDailyWorkout());
+        System.out.println(theCoach.getDailyFortune());
 
         context.close();
     }

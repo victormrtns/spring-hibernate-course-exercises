@@ -10,10 +10,15 @@
     <!-- Define your beans here -->
     <bean id = "Coach"
           class = "com.luv2code.springdemo.BaseballCoach">
+        <constructor-arg ref="myFortuneService"/>
+    </bean>
+    <bean id = "myFortuneService"
+          class = "com.luv2code.springdemo.HappyFortuneService">
     </bean>
     <bean id = "Coach1"
           class = "com.luv2code.springdemo.SoccerCoach">
     </bean>
+    
 </beans>
 
 
