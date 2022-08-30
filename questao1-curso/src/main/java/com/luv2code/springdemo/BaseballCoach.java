@@ -17,6 +17,6 @@ public class BaseballCoach implements Coach {
     }
 
     public String getDailyFortune() {
-        return "Letss go!";
+        return fortuneService.getFortune();
     }
 }
