@@ -15,6 +15,13 @@
     <bean id = "myFortuneService"
           class = "com.luv2code.springdemo.HappyFortuneService">
     </bean>
+    <bean id = "myCricketCoach"
+          class = "com.luv2code.springdemo.CricketCoach">
+        <property name="FortuneService" ref="myFortuneService"/>
+        <property name="emailAddress" value="myemail@myemail.com"/>
+        <property name="team" value="myteam"/>
+
+    </bean>
     <bean id = "Coach1"
           class = "com.luv2code.springdemo.SoccerCoach">
     </bean>
